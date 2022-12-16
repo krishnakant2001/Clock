@@ -1,0 +1,225 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(112deg, #FFDEE9 15%, #B5FFFC 100%);
+    /* background-color: #105f87; */
+    min-height: 100vh;
+    overflow-y: hidden;
+    /* justify-content: center;
+    align-items: center; */
+    /* min-height: 100vh; */
+}
+/* hr{
+    width: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 175px;
+    transform: rotate(-30deg);
+} */
+#greeting{
+    color: #091921;
+    /* color: rgba(255, 255, 255, 0.83); */
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    padding: 15px;
+}
+.clock{
+    /* display: flex; */
+    /* justify-content:center; */
+    /* align-items: center; */
+    /* margin-top: 0px; */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.484);
+    color: aliceblue;
+    border: 20px solid #091321;
+    box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+                inset 0 -15px 15px rgba(255, 255, 255, 0.05),
+                0 15px 15px rgba(0, 0, 0, 0.3),
+                inset 0 15px 15px rgba(0, 0, 0, 0.3);;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 350px;
+    /* background-image: linear-gradient(to right top, #8ef6e4 5%, #d59bf6 85%); */
+    background-color: #091921;
+    font-size: 25px;
+    font-weight: 600;
+    z-index: -1;
+
+     
+}
+#_12{
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.484);
+}
+#_1{
+    position: relative;
+    left: 80px;
+    bottom: 7px;
+}
+#_2{
+    position: relative;
+    left: 141px;
+    top: 21px;
+}
+#_3{
+    position: relative;
+    left: 165px;
+    top: 75px;  
+}
+#_4{
+    position: relative;
+    left: 142px;
+    top: 128px;
+}
+
+#_5{
+    position: relative;
+    left: 80px;
+    top: 160px;
+}
+#_6{
+    position: relative;
+    top: 154px;
+}
+#_7{
+    position: relative;
+    right: 80px;
+    top: 103px;
+}
+#_8{
+    position: relative;
+    right: 143px;
+    top: 20px;
+}
+#_9{
+    position: relative;
+    right: 165px;
+    bottom: 92px;
+}
+#_10{
+    position: relative;
+    right: 138px;
+    bottom: 200px;
+}
+#_11{
+    position: relative;
+    bottom: 287px;
+    right: 80px;
+}
+
+/* .hour, .minute, .second{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container{
+    display: flex; /*center mein lane ke liye*/
+    justify-content: center; /*beech mein lane ke liye */
+    align-items: center;
+    height: 320px;
+    width: 350px;
+    /* border: 1px solid black; */
+    margin: auto; /* this is also for center mein lane ke liye*/
+    position: relative;
+    bottom: 353px;
+
+}
+.container .hour, .hr{
+    position: absolute;
+    width: 100px;
+    height: 160px;
+    /* border: 1px solid blue; */
+}
+
+.container .minute, .min{
+    position: absolute;
+    width: 100px;
+    height: 230px;
+    /* border: 1px solid red; */
+}
+
+.container .second, .sec{
+    position: absolute;
+    width: 100px;
+    height: 300px;
+    /* border: 1px solid brown; */
+}
+
+.hr, .min, .sec{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hr::before{
+    
+    content: ' ';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #ff105e;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.min::before{
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background-color: #fff;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.sec::before{
+    content: ' ';
+    position: absolute;
+    width: 2px;
+    height: 180px;
+    background-color: #005f9a;
+    z-index: 12;
+    /* border-radius: 6px 6px 0 0; */
+}
+
+.point{
+    height: 20px;
+    width: 20px;
+    border: 2px solid #005f9a;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center; 
+}
+.digital{
+    color: #091921;
+    /* color: rgba(255, 255, 255, 0.677); */
+    display: flex;
+    justify-content: center;
+    
+    /* border: 1px solid #fff; */
+    width: 15%;
+    margin: auto;
+
+    align-items: center;
+    position: relative;
+    bottom: 23rem;
+
+    font-size: 7rem;
+    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-weight: 10;
+
+}
+#h, #s, #m{
+    padding: 40px;
+}
+
+
+
+
+
